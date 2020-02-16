@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'admin_page/index'
   get 'admin_page/edit'
   get 'admin_page/new'
-  post 'admin_page/new'
+  post 'admin_page/create'
   get 'admin_page/index'
   get 'welcome/index'
 
