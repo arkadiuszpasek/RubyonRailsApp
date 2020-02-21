@@ -37,9 +37,15 @@ Functonalities made:
 [x] Display of few newest articles from database
 
 # Images:
+## Landing page
 ![1](readme_img/landing.png)
+## Newest articles
 ![2](readme_img/newest.png)
+## Sign in page
 ![3](readme_img/login.png)
+## Adding new post
 ![4](readme_img/new.png)
+## Admin page
 ![5](readme_img/adminpage.png)
+## Edit view
 ![6](readme_img/editview.png)
