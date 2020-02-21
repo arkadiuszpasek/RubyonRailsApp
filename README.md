@@ -28,13 +28,13 @@ then create posts model:
 and run `rake db:migrate`
 
 Functonalities made:
-[x] Index Page
-[x] User creation
-[x] Admin login, admin page:
-[x] adding posts
-[x] deleting posts
-[ ] editing posts
-[x] Display of few newest articles from database
+- [x] Index Page
+- [x] User creation
+- [x] Admin login, admin page:
+- [x] adding posts
+- [x] deleting posts
+- [ ] editing posts
+- [x] Display of few newest articles from database
 
 # Images:
 ## Landing page
