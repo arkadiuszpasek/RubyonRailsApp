@@ -37,9 +37,9 @@ Functonalities made:
 [x] Display of few newest articles from database
 
 # Images:
-[1](readme_img/landing.png)
-[2](readme_img/newest.png)
-[3](readme_img/login.png)
-[4](readme_img/new.png)
-[5](readme_img/adminpage.png)
-[6](readme_img/editview.png)
+![1](readme_img/landing.png)
+![2](readme_img/newest.png)
+![3](readme_img/login.png)
+![4](readme_img/new.png)
+![5](readme_img/adminpage.png)
+![6](readme_img/editview.png)
