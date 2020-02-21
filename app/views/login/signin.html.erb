@@ -1,0 +1,10 @@
+<div class="container text-center mt-5">
+    <p class="lead text-muted">Enter your username and password to log in</p>
+    <%= form_for :user do |f| %>
+    <div class="form-group">
+        Name: <%= f.text_field :name, class: "form-control mb-3" %>
+        Password: <%= f.password_field :pwd_hash, class: "form-control mb-3" %>
+        <%= f.submit "Log in", class: "btn btn-primary" %>
+    </div>
+    <% end %>
+</div>

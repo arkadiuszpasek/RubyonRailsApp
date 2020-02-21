@@ -1,0 +1,23 @@
+<div class="container text-center mt-5">
+    <p class="lead text-muted">Choose post to edit</p>
+    <% Post.all.each_with_index do |post, index| %>
+        <% if index == 0 %>
+        <div class="row">
+        <% elsif index % 3 == 0 %>
+        </div>
+        <div class="row">
+        <% end %>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title"><%= post.title %></h5>
+                    <p class="card-text mb-2 text-muted"><%= post.intro %></p>
+                    <%= link_to "Edit", "/admin_page/edit?id=#{post.id}" %><br/>
+                    <%= link_to "Delete", "/admin_page/delete?id=#{post.id}", class: "text-danger" %>
+                </div>
+            </div>
+        </div>
+    <% end %>
+    </div>
+    <%= link_to "Back to admin page", admin_page_index_path, {:class =>"btn btn-primary my-2"} %>
+</div>

@@ -1,0 +1,14 @@
+<div class="container text-center mt-5">
+    <p class="lead text-muted">Add your new post</p>
+    <%= form_for :post, :url => admin_page_create_path do |f| %>
+        <div class="form-group">
+            Title: <%= f.text_field :title, class: "form-control mb-1"%>
+            Intro: <%= f.text_area :intro, class: "form-control mb-1" %>
+            Reading time: <%= f.text_field :reading_time, class: "form-control mb-1" %>
+            Thumbnail: <%= f.text_field :thumbnail_url, class: "form-control mb-1" %>
+            Content: <%= f.text_area :content, class: "form-control mb-1" %>
+            <%= f.submit %>
+        </div>
+    <% end %>
+    <%= link_to "Back to admin page", admin_page_index_path, {:class =>"btn btn-primary my-2"} %>
+</div>

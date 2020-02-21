@@ -1,0 +1,40 @@
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1>Hello there!</h1>
+    <p class="lead text-muted">I am glad you visited. This blog is about Id ipsum aute labore consectetur ex do amet adipisicing cupidatat qui dolor esse.</p>
+    <p>
+      <%= link_to "Sign up", login_signup_path, {:class => "btn btn-primary my-2"} %>
+      <%= link_to "Log in", login_signin_path, {:class => "btn btn-secondary my-2"} %>
+    </p>
+  </div>
+</section>
+
+<div class="album py-5 bg-light">
+  <div class="container text-center">
+    <h1 class="mb-5">Newest articles</h1>
+    <% posts = Post.first(6) %>
+    <% for i in 0...2 %>
+      <div class="row">
+        <% for j in 3*i...3*i+3 %>
+          <% post = posts[j] %>
+          <% if post %>
+            <div class="col-md-4">  
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="<%= post.thumbnail_url %>" alt="Card image cap" width="100%" height="225">
+                <div class="card-body">
+                  <p class="card-text"><%= post.title %></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                    <small class="text-muted"><%= post.reading_time %> min</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+      <% end %>
+  </div>
+</div>
