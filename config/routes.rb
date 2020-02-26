@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'admin_page/index'
   get 'admin_page/show'
   get 'admin_page/new'
-  get 'admin_page/delete'
+  delete 'admin_page/delete'
   post 'admin_page/create'
   get 'admin_page/index'
   get 'welcome/index'

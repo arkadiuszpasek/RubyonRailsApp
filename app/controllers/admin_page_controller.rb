@@ -8,8 +8,8 @@ class AdminPageController < ApplicationController
 
   def delete
     if params[:id]
-      post = Post.find(params[:id])
-      post.destroy
+      @post = Post.find(params[:id])
+      @post.destroy
     else
       redirect_to admin_page_index_path
     end
