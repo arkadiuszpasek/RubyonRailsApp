@@ -3,7 +3,17 @@ class AdminPageController < ApplicationController
   end
 
   def show
-    
+  end
+
+  def edit
+    if request.get? and params[:id]
+      @post = Post.find(params[:id])
+    elsif request.post? and params
+      @post = Post.find(params[:post][:id])
+      @post.update(post_params)
+      redirect_to admin_page_index_path
+    end
+
   end
 
   def delete
@@ -28,6 +38,9 @@ class AdminPageController < ApplicationController
   end
 
   def new
+  end
 
+  private def post_params
+    params.require(:post).permit(:title, :intro, :reading_time, :thumbnail_url, :content)
   end
 end

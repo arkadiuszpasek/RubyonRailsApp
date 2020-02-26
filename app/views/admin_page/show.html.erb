@@ -12,8 +12,8 @@
                 <div class="card-body">
                     <h5 class="card-title"><%= post.title %></h5>
                     <p class="card-text mb-2 text-muted"><%= post.intro %></p>
-                    <%= link_to "Edit", "/admin_page/edit?id=#{post.id}" %><br/>
-                    <%= link_to "Delete", "/admin_page/delete?id=#{post.id}", class: "text-danger", method: "delete" %>
+                    <%= link_to "Edit", admin_page_edit_path(:id => post.id) %><br/>
+                    <%= link_to "Delete", admin_page_delete_path(:id => post.id), class: "text-danger", method: "delete" %>
                 </div>
             </div>
         </div>
