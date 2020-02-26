@@ -30,7 +30,7 @@ Functonalities made:
 - [x] Admin login, admin page:
 - [x] adding posts
 - [x] deleting posts
-- [ ] editing posts
+- [x] editing posts
 - [x] Display of few newest articles from database
 
 # Images:
