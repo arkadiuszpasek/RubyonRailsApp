@@ -13,7 +13,6 @@ class AdminPageController < ApplicationController
       @post.update(post_params)
       redirect_to admin_page_index_path
     end
-
   end
 
   def delete

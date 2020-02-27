@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="<%= @post.thumbnail_url%>" alt="Post thumbanil" width="100%">
+        </div>
+        <div class="col-md-8 text-center">
+            <p class="mt-5"> <%= @post.title %> </p>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="text-center mt-2 mb-2">
+        <p> <%= @post.intro %> </p>
+    </div>
+    <hr class="featurette-divider">
+    <div class="text-center mt-5 mb-5">
+        <p> <%= @post.content %> </p>
+    </div>
+</div>

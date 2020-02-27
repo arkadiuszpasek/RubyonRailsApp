@@ -32,6 +32,7 @@ Functonalities made:
 - [x] deleting posts
 - [x] editing posts
 - [x] Display of few newest articles from database
+- [x] Article display
 
 # Images:
 ## Landing page

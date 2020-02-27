@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'article/display'
   get 'login/signin'
   get 'login/signup'
   get 'admin_page/index'
